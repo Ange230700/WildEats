@@ -6,9 +6,12 @@
     "db:seed": "node ./bin/seed.js",
     "build": "node ./bin/migrate.js",
     "start": "node index.js",
-    "test": "jest"
+    "test": "jest",
+    "prettier": "npx prettier --write .",
+    "lint": "npx eslint . --fix"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "mysql2": "^3.6.7"
