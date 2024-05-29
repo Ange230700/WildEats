@@ -1,0 +1,41 @@
+nav {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav img {
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+nav p {
+  font-family: var(--header-font);
+  font-size: 1.25rem;
+}
+
+.logoWE {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+@media screen and (min-width: 600px) {
+  nav {
+    flex-shrink: 0;
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+    height: 10vh;
+  }
+  nav img {
+    width: 6.99538rem;
+    height: 6.99538rem;
+  }
+
+  nav p {
+    font-size: calc(var(--font-size-standard) * 3);
+  }
+}
