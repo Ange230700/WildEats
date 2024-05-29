@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Filters from "../components/Filters";
 import Cards from "../components/Cards";
-import Map from "../components/Map";
+// import Map from "../components/Map";
 import Footer from "../components/Footer";
 
 import FilterOptions from "../data/FilterOptions";
@@ -24,7 +24,7 @@ function Page() {
       />
       <main>
         <Cards restaurants={filteredRestaurants} />
-        <Map />
+        {/* <Map /> */}
       </main>
       <Footer />
     </div>
