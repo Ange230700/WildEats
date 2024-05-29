@@ -1,12 +1,13 @@
+import { Link } from "react-router-dom";
 import logo from "../../../server/public/assets/images/wLogo.png";
 
 function Navbar() {
   return (
     <nav>
-      <div className="logoWE">
+      <Link to="/" className="logoWE">
         <img src={logo} alt="logo" />
         <p>Eats</p>
-      </div>
+      </Link>
     </nav>
   );
 }

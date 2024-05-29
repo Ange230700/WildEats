@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import instagramLogo from "../../../server/public/assets/images/InstagramLogo.svg.png";
 import facebookLogo from "../../../server/public/assets/images/facebookLogo.svg.png";
 import wildCodeSchoolLogo from "../../../server/public/assets/images/wildCodeSchoolLogoEntire.png";
@@ -51,13 +53,13 @@ function Footer() {
         </div>
 
         <div className="link nouscontacter">
-          <a href="./contactForm.html">
+          <Link to="/contact">
             <i
               className="fa-solid fa-envelope fa-2xl"
               style={{ color: "#464646" }}
             />
             <p>Nous contacter</p>
-          </a>
+          </Link>
         </div>
       </div>
 

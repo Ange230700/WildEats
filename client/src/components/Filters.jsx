@@ -65,13 +65,13 @@ Filters.propTypes = {
     ).isRequired,
     prices: PropTypes.arrayOf(
       PropTypes.shape({
-        value: PropTypes.number.isRequired,
+        value: PropTypes.string.isRequired,
         label: PropTypes.string.isRequired,
       })
     ).isRequired,
     notes: PropTypes.arrayOf(
       PropTypes.shape({
-        value: PropTypes.number.isRequired,
+        value: PropTypes.string.isRequired,
         label: PropTypes.string.isRequired,
       })
     ).isRequired,

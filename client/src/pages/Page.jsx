@@ -15,7 +15,7 @@ function Page() {
     UseFilter(CardRestaurants);
 
   return (
-    <>
+    <div className="MainPage">
       <Navbar />
       <Hero handleSearch={handleSearch} />
       <Filters
@@ -27,7 +27,7 @@ function Page() {
         <Map />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
 

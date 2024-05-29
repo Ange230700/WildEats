@@ -32,6 +32,11 @@
   box-sizing: border-box;
 }
 
+html {
+  display: flex;
+  flex-direction: column;
+}
+
 #root {
   display: flex;
   flex-direction: column;
@@ -76,7 +81,7 @@ main {
   //     grid-template-rows: 10vh auto 1fr auto;
   //   }
 
-  #root {
+  .MainPage {
     font-family: var(--text-font);
     font-size: var(--font-size-standard);
     line-height: var(--line-height-standard);

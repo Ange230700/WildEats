@@ -20,8 +20,8 @@ Cards.propTypes = {
     PropTypes.shape({
       restaurantName: PropTypes.string.isRequired,
       category: PropTypes.string.isRequired,
-      price: PropTypes.number.isRequired,
-      note: PropTypes.number.isRequired,
+      price: PropTypes.string.isRequired,
+      note: PropTypes.string.isRequired,
     })
   ).isRequired,
 };

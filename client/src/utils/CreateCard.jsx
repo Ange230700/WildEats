@@ -1,5 +1,6 @@
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-import Link from "../../../server/public/assets/icons/link-alt.svg";
+import LinkIcon from "../../../server/public/assets/icons/link-alt.svg";
 import CheckIcon from "../../../server/public/assets/icons/check-circle.svg";
 
 function CreateCard({ restaurant }) {
@@ -27,15 +28,15 @@ function CreateCard({ restaurant }) {
           </div>
           <div>
             {price}{" "}
-            <a
-              href={link}
+            <Link
+              to={link}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="website link"
             >
               {/* <i className="fa-solid fa-link"></i> */}
-              <img src={Link} alt="" />
-            </a>
+              <img src={LinkIcon} alt="link icon" />
+            </Link>
           </div>
         </div>
         <p className="card-adress">{address}</p>
@@ -63,8 +64,8 @@ CreateCard.propTypes = {
     category: PropTypes.string.isRequired,
     address: PropTypes.string.isRequired,
     takeaway: PropTypes.bool.isRequired,
-    price: PropTypes.number.isRequired,
-    note: PropTypes.number.isRequired,
+    price: PropTypes.string.isRequired,
+    note: PropTypes.string.isRequired,
   }).isRequired,
 };
 
