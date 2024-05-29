@@ -37,6 +37,7 @@ app.use(
       "http://mysite.com",
       "http://another-domain.com",
       "http://192.168.0.25:3003",
+      "http://vps-80a85dd9.vps.ovh.net:5003",
     ],
   })
 );
