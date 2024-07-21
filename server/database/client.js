@@ -3,6 +3,7 @@ const { DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_NAME } = process.env;
 
 // Create a connection pool to the database
 const mysql = require("mysql2/promise");
+require("dotenv").config({ path: "./server/.env" });
 
 const client = mysql.createPool({
   host: DB_HOST,
